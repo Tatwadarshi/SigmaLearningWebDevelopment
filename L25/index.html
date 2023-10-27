@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling lists using CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(38, 8, 65);
+        }
+        nav{
+            margin: auto;
+            /* background-color: yellow; */
+            height: 20vh;
+            background-image: url(background2.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        nav ul{
+            /* margin: auto; */
+            /* background-color: red; */
+            height: fit-content;
+            display: flex;
+        }
+        nav ul li{
+            /* margin: auto; */
+            /* list-style-type: "🙂"; */
+            /* list-style-position: inside; */
+            /* background-color: aqua; */
+            /* list-style-image: url(https://img.icons8.com/?size=40&id=39038&format=png); */
+            list-style: none;
+            padding: 5px 15px;
+            margin: 2px;
+            color: rgb(255, 0, 191);
+            background-color: rgba(129, 215, 255, 0.626);
+            /* border: 1px solid rgb(216, 174, 122); */
+            border-radius: 4px;
+            box-shadow: 1px 1px 8px 1px rgb(205, 194, 39);
+            cursor: pointer;
+            transition-duration: 100ms;
+        }
+        nav ul li:hover{
+            box-shadow: 2px 2px 8px 1px rgb(165, 156, 29);
+            padding: 5px 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

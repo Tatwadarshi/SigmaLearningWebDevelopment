@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    /* background-color: blueviolet; */
+    text-align: center;
+    color: rgb(153, 0, 255);
+    margin-bottom: 40px;
+}
+
+#form{
+    background-color: aqua;
+    /* text-align: center; */
+    margin: 25px;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+label{
+    /* background-color: rgb(43, 255, 0); */
+    height: 2em;
+    font-size: 1.4em;
+    /* padding-top: 10px; */
+
+}
+
+input{
+    background-color: #fff5ce;
+    height: 1em;
+    font-size: 1.3em;
+    padding: 2px;
+    margin: 10px auto;
+}

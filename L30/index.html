@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Vaiables</title>
+    <style>
+        :root{
+            --navbg: antiquewhite;
+            --bgclr: rgb(143, 158, 8);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        nav{
+            background-color: var(--navbg);
+            height: 5em;
+            display: flex;
+            align-items:end;
+            justify-content: center;
+
+        }
+
+        nav ul{
+            display: flex;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 5px;
+            padding: 5px;
+            cursor: pointer;
+            color: var(--bgclr);
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+    </nav>
+
+    <div class="container container1">
+        <h1>Let's learn about CSS Variables Today</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et vero saepe, commodi cum iusto dignissimos ad dolore blanditiis labore! Ullam nam ea molestiae fuga nemo sint saepe hic laudantium distinctio.</p>
+    </div>
+
+    <div class="conmtainer container2">
+        <h1>Let's get deep into it</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam recusandae veritatis quis voluptatum quam, nisi quae, saepe sint quibusdam repellat consequatur minima iusto pariatur ducimus architecto consequuntur earum provident odit?</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows & Outlines</title>
+    <style>
+        .box{
+            display: flex;
+            color: blueviolet;
+            justify-content: center;
+            margin: auto;
+            padding: 34px;
+            background-color: rgba(93, 37, 37, 0.088);
+            border: 1px solid rgb(93, 37, 37);
+            border-radius: 7px;
+            width: 60vw;
+            box-shadow: 5px 5px 25px 1px rgb(93, 37, 37);
+            transition-duration: 200ms;
+        }
+        .box:hover{
+            box-shadow: 1px 1px 25px 1px rgb(93, 37, 37);
+            text-shadow: 1px 1px 2px rgb(251, 0, 255), 1px 1px 2px yellow, 1px 1px 2px red;
+            /* font-size: large; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+</body>
+</html>

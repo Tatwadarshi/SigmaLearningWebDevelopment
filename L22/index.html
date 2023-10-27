@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 10px;
+            background-color: yellow;
+        }
+        body{
+            background-color: red;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aqua;
+            font-size: 24px;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 70vh;
+            margin: 12px auto;
+            font-size: 20px;
+            background-color:antiquewhite;
+        }
+        .container p{
+            font-size: 2em;
+            font-size: 2rem;
+        }
+        .another-container{
+            box-sizing: border-box;
+            background-color: blue;
+            color: white;
+            font-size: 1.5rem;
+            width: 100vmin;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box ok
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates tempora maiores numquam veniam magni cum reiciendis quam illum. Voluptatum amet veritatis deserunt nostrum officia alias sint quo earum inventore numquam cumque illo totam nisi error, consequatur perspiciatis ipsam iste, id quia, ducimus laborum labore sit impedit. Debitis ex explicabo at soluta quod cum magnam, voluptatem autem amet iusto illo dolores ipsa ratione eius eligendi aspernatur sit aliquam? Neque quas dolor rerum odit? Nihil nesciunt aperiam animi ducimus ullam?
+        </p>
+    </div>
+    <div class="another-container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic error optio, dolorem qui non aliquid voluptas soluta dignissimos? Consequatur libero culpa dolore aliquam, esse tempora. Adipisci officiis ex numquam officia.
+    </div>
+</body>
+</html>

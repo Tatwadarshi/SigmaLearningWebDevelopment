@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts, Text & Color Properties</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Mochiy+Pop+One&display=swap');
+        h1 {
+            font-family: 'Mochiy Pop One', Algerian, 'Times New Roman', Times, serif;
+            color: blueviolet;
+            text-align: center;
+        }
+
+        h2{
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-color: blue;
+            text-decoration-style:wavy;
+        }
+
+        h2:hover{
+            text-decoration-color:aqua;
+        }
+        p {
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        .container{
+            /* background-color: red; */
+        }
+        .lorem{
+            width: 300px;
+            height: 200px;;
+            word-break: break-all;
+            border: 2px solid red;
+            text-overflow: ellipsis;
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p>This is a paragraph</p>
+        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto magni quia, similique voluptate recusandae hic, dolorum dicta asperiores mollitia aut? Nobis necessitatibus natus hic repellat minus mollitia enim omnis.</p>
+    </div>
+</body>
+
+</html>

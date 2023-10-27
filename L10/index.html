@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Video, Audio & Media in HTML</title>
+</head>
+<body>
+    <div id="vdo">
+        <video src="video.mp4" height="268" controls muted poster="thumbnail.png"></video>
+
+        <audio src="audio.mp3" controls loop preload="metadata"></audio>
+
+        <svg width="200" height="200">
+            <path d="M10 80 L50 10 L90 80 Z" fill="blue" />
+         </svg>
+
+         <svg width="200" height="100">
+            <rect x="10" y="20" width="1000" height="40" fill="blue" />
+            <text x="20" y="50" fill="black">Hello, SVG!</text>
+         </svg>
+         
+    </div>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=s7YHAQcQ1qs4tOGX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
