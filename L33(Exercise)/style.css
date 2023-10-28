@@ -1,0 +1,126 @@
+/* For light theme:  */
+
+:root{
+    --headerBgColor: antiquewhite;
+    --liBgColor: rgb(252, 211, 158);
+    --liShadowColor: rgb(160, 136, 104);
+    --liMargin: 4;
+    --liPadding: 4;
+    --btnBgColor: rgb(236, 205, 255);
+    --btnTxtColor: rgb(123, 0, 255);
+    --BgColor: rgb(197, 227, 253);
+    --textColor: black;
+    --footerBgColor: rgb(27, 4, 73);
+    --ftextcolor: wheat;
+}
+
+/* For Dark theme:  */
+
+
+/* :root{
+    --headerBgColor: rgb(27, 4, 73);
+    --liBgColor: rgb(156, 90, 4);
+    --liShadowColor: rgb(255, 255, 255);
+    --liMargin: 4;
+    --liPadding: 4;
+    --btnBgColor: rgb(236, 205, 255);
+    --btnTxtColor: rgb(123, 0, 255);
+    --BgColor: rgb(12, 64, 109);
+    --textColor: rgb(254, 244, 225);
+    --footerBgColor: rgb(168, 126, 72);
+    --ftextcolor: rgb(255, 255, 255);
+} */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--textColor);
+}
+
+body{
+    background-color: var(--BgColor);
+}
+
+header{
+    display: flex;
+    background-color: var(--headerBgColor);
+    height: 15vh;
+}
+
+header nav{
+    display: flex;
+
+}
+
+header nav ul{
+    margin: auto;
+    width: 100vw;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+header nav ul li{
+    margin: calc(var(--liMargin)*1px);
+    padding: calc(var(--liPadding)*1px);
+    background-color: var(--liBgColor);
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 0px var(--liShadowColor);
+    cursor: pointer;
+    transition-duration: 100ms;
+}
+
+header nav ul li:hover{
+    /* padding: var(--liPadding)+6px; */
+    box-shadow: 1px 1px 8px 0px var(--liShadowColor) ;
+    padding: calc(var(--liPadding)*1px) calc(var(--liPadding)*1.25px) ;
+}
+
+header button {
+    height: fit-content;
+    padding: 5px;
+    margin: 5px;
+    position: fixed;
+    background-color: var(--btnBgColor);
+    color: var(--btnTxtColor);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#btn1{
+    right: 6em;
+}
+
+#btn2{
+    right: 1em;
+}
+
+.container{
+    margin: 50px 2px;
+    padding: 2px;
+    /* height: 80vh; */
+}
+
+footer{
+    background-color: var(--footerBgColor);
+    color: var(--ftextcolor);
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    /* position: relative; */
+    bottom: 5px;
+}
+
+footer span{
+    color: var(--ftextcolor);
+}
+
+footer span a{
+    color: var(--ftextcolor);
+    padding-left: 10px;
+}
