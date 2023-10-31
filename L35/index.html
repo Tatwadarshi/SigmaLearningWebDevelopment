@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS Selectors</title>
+    <style>
+        .box:first-child{
+            background-color: red;
+        }
+        .box::first-line{
+            color: blue;
+        }
+        [data-color="primary"]{
+            color: red;
+        }
+        .boxes::before{
+            content: "Hello I am here";
+        }
+        .boxes::after{
+            content: 'completed';
+        }
+        ::selection{
+            background-color: gray;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hii I am a box</div>
+        <div class="box">Hii I am a box Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati debitis eos dignissimos asperiores officiis temporibus ratione cum. Obcaecati nihil, numquam veritatis perferendis possimus voluptatum enim. Rem ipsam dolorum eum cupiditate.</div>
+        <div data-color="primary" class="box">Hii I am a box</div>
+    </div>
+</body>
+</html>
