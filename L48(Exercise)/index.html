@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Bounce Simulation</title>
+    <style>
+        :root{
+            --containerWidth: 900px;
+            --containerHeight: 80vh;
+            --ballWidth: calc((var(--containerWidth)) * (5/100));
+            --ballHeight: var(--ballWidth);
+            --bounceHeight: calc((var(--containerHeight) * (70/100)));
+        }
+        .container{
+            position: relative;
+            height: var(--containerHeight);
+            width: var(--containerWidth);
+            background-color: blue;
+            margin: auto;
+        }
+        .ball{
+            height: var(--ballHeight);
+            width: var(--ballWidth);
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: bounceY 1s ease-out infinite alternate,
+                       bounceX 6s linear infinite;
+        }
+        
+        /* @keyframes bounceX {
+            100%{
+                transform: translateX(calc(var(--containerWidth) - var(--ballWidth)));
+            }
+        }
+
+        @keyframes bounceY {
+            0%{
+                transform: translateY(0);
+            }
+            100%{
+                transform: translateY(var(--bounceHeight));
+            }
+        } */
+        
+        @keyframes bounceX {
+            0%{
+                left: 0;
+            }
+            100%{
+                left: calc(var(--containerWidth) - var(--ballWidth));
+            }
+        }
+
+        @keyframes bounceY {
+            0%{
+                bottom: 0;
+            }
+            100%{
+                bottom: var(--bounceHeight);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+        </div>
+    </div>
+</body>
+</html>

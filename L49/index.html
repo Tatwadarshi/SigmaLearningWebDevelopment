@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit and Position</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            border: 2px solid;
+            /* background-color: azure; */
+            background-image: url(https://images.dog.ceo//breeds//hound-plott//hhh_plott002.jpg);
+            background-position: center left;
+        }
+        img{
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+            /* object-fit: contain; */
+            object-position: left top;
+            /* object-fit: scale-down; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://images.dog.ceo//breeds//hound-plott//hhh_plott002.jpg" alt="dog"> -->
+    </div>
+</body>
+</html>
